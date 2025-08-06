@@ -1,0 +1,487 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* === HOMEPAGE === */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: #111;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000; /* Black */
+  padding: 15px 20px;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Navigation */
+.header-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Hero Section */
+.hero {
+  padding: 80px 20px 60px;
+  text-align: center;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #006400; /* Deep Green accent */
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hero Links */
+.hero-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.hero-link {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #006400; /* Deep Green */
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.hero-link:hover {
+  background-color: #004d00;
+}
+
+
+/* Section Titles */
+.featured-projects h2 {
+  margin: 40px 0 20px;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #000000;
+}
+
+/* Project Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 0 10px 40px;
+}
+
+/* Project Card */
+.project-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-left: 4px solid #8B0000; /* Red accent */
+  border-radius: 4px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.project-card a {
+  text-decoration: none;
+  color: #111;
+  display: block;
+}
+
+/* Project Image */
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Project Text Content */
+.project-card h3 {
+  font-size: 1.2rem;
+  margin: 16px 20px 10px;
+  color: #006400; /* Green title */
+}
+
+.project-card p {
+  margin: 0 20px 12px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* =======================================================
+   PROJECT DETAIL PAGE STYLES
+   ======================================================= */
+
+/* Hero Section */
+.project-hero {
+  padding: 40px 20px 20px;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.project-hero h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.status-badge.completed {
+  background-color: #006400;
+  color: #fff;
+}
+
+.status-badge.ongoing {
+  background-color: #ffa500;
+  color: #fff;
+}
+
+.status-badge.delayed {
+  background-color: #8b0000;
+  color: #fff;
+}
+
+.project-banner {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+/* Project Overview */
+.project-overview {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.project-overview h3 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.project-details {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.project-details li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.project-details a {
+  color: #006400;
+  text-decoration: none;
+}
+
+.project-details a:hover {
+  text-decoration: underline;
+}
+
+.project-overview p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Leadership Section */
+.project-leadership {
+  padding: 40px 20px;
+  background-color: #f0f0f0;
+}
+
+.project-leadership h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.leader-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.leader-list li {
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.leader-list a {
+  color: #006400;
+  text-decoration: none;
+}
+
+.leader-list a:hover {
+  text-decoration: underline;
+}
+
+/* Public Documents */
+.project-documents {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.project-documents h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.project-documents p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* CTA Section */
+.project-cta {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #006400;
+  color: #fff;
+  padding: 12px 24px;
+  margin: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #004d00;
+}
+
+.cta-link {
+  display: inline-block;
+  color: #000;
+  text-decoration: underline;
+  margin-top: 15px;
+  font-size: 0.95rem;
+}
+
+.cta-link:hover {
+  color: #006400;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .project-hero h2 {
+    font-size: 1.6rem;
+  }
+
+  .project-banner {
+    max-height: 250px;
+  }
+
+  .project-overview, .project-leadership, .project-documents, .project-cta {
+    padding: 30px 15px;
+  }
+}
+
+/* =======================================================
+   CONTRACTOR PROFILE PAGE STYLES
+   ======================================================= */
+
+/* Hero / Banner Section */
+.contractor-hero {
+  padding: 60px 20px 40px;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.contractor-hero h2 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.contractor-hero .tagline {
+  font-size: 1rem;
+  color: #006400;
+  margin-bottom: 20px;
+}
+
+.contractor-banner {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* About / Overview Section */
+.contractor-about {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.contractor-about h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.contractor-about p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Services & Expertise */
+.contractor-services {
+  padding: 40px 20px;
+  background-color: #f0f0f0;
+}
+
+.contractor-services h3 {
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+}
+
+.contractor-services ul {
+  list-style: disc inside;
+  margin-left: 20px;
+}
+
+.contractor-services li {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+/* Portfolio / Projects List */
+.contractor-projects {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.contractor-projects h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.contractor-projects ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contractor-projects li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.contractor-projects a {
+  color: #006400;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contractor-projects a:hover {
+  text-decoration: underline;
+}
+
+/* Contact & Compliance Section */
+.contractor-contact {
+  padding: 40px 20px;
+  background-color: #f8f8f8;
+}
+
+.contractor-contact h3 {
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+}
+
+.contractor-contact p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.contractor-contact strong {
+  color: #000;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .contractor-hero h2 {
+    font-size: 1.8rem;
+  }
+  .contractor-hero .tagline {
+    font-size: 0.9rem;
+  }
+  .contractor-about, .contractor-services,
+  .contractor-projects, .contractor-contact {
+    padding: 30px 15px;
+  }
+}
+
