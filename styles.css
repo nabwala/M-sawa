@@ -24,15 +24,94 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #000000; /* Black */
+  background-color: #000000;
   padding: 15px 20px;
+}
+
+.top-left a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo-group {
+  display: flex;
+  flex-direction: column;
 }
 
 .logo {
   font-size: 1.4rem;
   font-weight: 700;
   color: #ffffff;
+  margin: 0;
 }
+
+.logo a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Container for nav items */
+.navbar {
+  background-color: #000000;
+  padding: 10px;
+}
+
+/* Main menu */
+.nav-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+/* Items in nav */
+.nav-item a,
+.dropbtn {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Optional: hover effect */
+.dropdown-content a:hover {
+  background-color: #555;
+}
+
 
 /* Navigation */
 .header-nav {
@@ -52,6 +131,8 @@ body {
 .nav-link:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
+
+
 
 /* Hero Section */
 .hero {
