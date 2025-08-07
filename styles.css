@@ -132,6 +132,15 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+/* Divider */
+.section-divider-green {
+  border: none;
+  height: 3px;
+  background-color: #006400;
+  width: 180px;
+  margin: 40px auto;
+  border-radius: 2px;
+}
 
 
 /* Hero Section */
