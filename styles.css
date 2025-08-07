@@ -566,3 +566,58 @@ footer {
   }
 }
 
+/* === LEADER PAGES === */
+.leader-hero {
+  padding: 60px 20px 30px;
+  background-color: #f8f8f8;
+}
+
+.leader-photo {
+  width: 180px;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  border: 2px solid #006400;
+}
+
+.leader-title {
+  font-size: 1rem;
+  color: #006400;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.leader-about,
+.leader-projects,
+.leader-contact {
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+.leader-about h3,
+.leader-projects h3,
+.leader-contact h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.leader-projects ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.leader-projects li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.leader-projects a {
+  color: #006400;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.leader-projects a:hover {
+  text-decoration: underline;
+}
