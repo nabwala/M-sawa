@@ -372,6 +372,14 @@ footer {
   text-decoration: underline;
 }
 
+.leader-photo {
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 6px;
+  margin-right: 15px;
+  float: center;
+}
+
 /* Public Documents */
 .project-documents {
   padding: 40px 20px;
